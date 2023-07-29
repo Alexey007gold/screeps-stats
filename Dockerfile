@@ -1,4 +1,4 @@
-FROM python:2.7
+FROM python:3.6
 MAINTAINER patryk.perduta@gmail.com
 
 RUN git clone https://github.com/Alexey007gold/screeps-stats.git /screeps-stats
