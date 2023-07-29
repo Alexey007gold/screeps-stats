@@ -31,7 +31,7 @@ def getAllianceFromUser(username):
 
 @cache.cache(expire=3600)
 def getAllianceData():
-    alliances = requests.get(allianceUrl).json()
+    alliances = requests.get(allianceUrl, verify=False, ssl=False).json()
     alliances_processed = {}
     for alliance, allianceData in alliances.items():
         for member in allianceData['members']:
