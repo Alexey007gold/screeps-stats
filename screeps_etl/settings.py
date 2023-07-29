@@ -25,7 +25,7 @@ def getSettings():
             return False
 
         with open(path, 'r') as f:
-            getSettings.settings = yaml.load(f)
+            getSettings.settings = yaml.safe_load(f)
 
     return getSettings.settings
 
