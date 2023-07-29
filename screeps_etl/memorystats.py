@@ -250,7 +250,7 @@ class ScreepsMemoryStats():
 
     def clean(self, datadict):
         newdict = {}
-        for key, value in datadict.iteritems():
+        for key, value in datadict.items():
             if key == 'tick':
                 newdict[key] = int(value)
             else:
