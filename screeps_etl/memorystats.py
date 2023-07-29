@@ -50,7 +50,8 @@ class ScreepsMemoryStats():
 
                 # Market data changes much more rarely so process it less often.
                 if not lastrun or lastrun >= 20:
-                    self.collectMarketHistory(shard)
+                    # TODO Fix it
+                    # self.collectMarketHistory(shard)
                     lastrun = 1
                     # don't pause before next run as market collection adds its own
                     # delays
